@@ -13,6 +13,9 @@ let button = document.querySelector("#submit_button");
  */
  button.onclick = function updateDB(event){
     event.preventDefault(); //stop refreshing
+
+    window.open("index.html", "_blank")
+
     let title           = titleElement.value;
     let username        = usernameElement.value;
     let paragraph       = paragraphElement.value;
