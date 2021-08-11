@@ -12,32 +12,35 @@ function addBlogToBoard(rowData) {
     let username = row.NAME;
     let message = row.MESSAGE;
     let time = row.TIME;
+    let divElement = document.createElement("div")
     let pElement = document.createElement("p");
     let p1Element = document.createElement("p");
     let p2Element = document.createElement("p");
     let p3Element = document.createElement("p");
+    let linebr = document.createElement("br");
 
-    pElement.setAttribute("class", "pTags");
-    p1Element.setAttribute("class", "pTags");
-    p2Element.setAttribute("class", "pTags");
-    p3Element.setAttribute("class", "pTags");
+
+    divElement.setAttribute("id", "divid")
+    pElement.setAttribute("id", "p1");
+    p1Element.setAttribute("id", "p2");
+    p2Element.setAttribute("id", "p3");
+    p3Element.setAttribute("id", "p4");
 
     pElement.innerText = "Title: " + title;
     p1Element.innerText = "Name: " + username;
     p2Element.innerText = "Message: " + message;
     p3Element.innerText = "Date and Time: " + time;
-
+    linebr;
     
-    p1Element.innerHTML = username + " : " + message; 
-    
+     
 
-    blogContainer.appendChild(pElement);
 
-    
-
-    blogContainer.appendChild(pElement);
-    blogContainer.appendChild(p1Element);
-    blogContainer.appendChild(p2Element);
-    blogContainer.appendChild(p3Element);
+    blogContainer.prepend(linebr);
+    blogContainer.appendChild(divElement);
+    divElement.prepend(p3Element);
+    divElement.prepend(p2Element);
+    divElement.prepend(p1Element);
+    divElement.prepend(pElement);
+    blogContainer.prepend(linebr);
     
 }

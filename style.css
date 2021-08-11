@@ -91,3 +91,18 @@ button:hover{
 .container{
     border: 4px;
 }
+
+#divid {
+    text-align: center;
+    border: 5px solid black;
+    margin: 100px 300px 100px 300px;
+    padding: 50px;
+}
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+

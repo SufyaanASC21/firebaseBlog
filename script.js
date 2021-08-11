@@ -1,5 +1,5 @@
 let titleElement = document.querySelector("#title_input");
-let usernameElement = document.querySelector("#userName_input");
+let usernameElement = document.querySelector("#username_input");
 let paragraphElement = document.querySelector("#paragraph_input");
 let timeElement = document.querySelector("#time_input");
 let button = document.querySelector("#submit_button");
